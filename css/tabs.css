@@ -1,0 +1,63 @@
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabs__links {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    order: 0;
+    white-space: nowrap;
+    background-color: #faf8f3;
+    border: 1px solid #ffe7ba;
+    box-shadow: 0 2px 4px 0 #ffe7ba;
+    justify-content: center;
+  }
+
+  .tabs__links>a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 10px;
+    text-align: center;
+    color: #000;
+    transition: 0.2s;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .tabs__links>a:hover {
+    background-color: #e4b864;
+  }
+
+  .tabs>#content-1:target~.tabs__links>a[href="#content-1"],
+  .tabs>#content-2:target~.tabs__links>a[href="#content-2"],
+  .tabs>#content-3:target~.tabs__links>a[href="#content-3"],
+  .tabs>#content-4:target~.tabs__links>a[href="#content-4"] {
+    background-color: #e4b864;
+    cursor: default;
+  }
+
+  .tabs>div:not(.tabs__links) {
+    display: none;
+    order: 1;
+  }
+
+  .tabs>div:target {
+    display: block;
+  }
+.tabss {
+    margin-bottom: 150px;
+}
