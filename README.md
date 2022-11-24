@@ -11,3 +11,5 @@ The site consists of five web pages. The layout was made thanks to html5 and css
 Adaptive layout was made so that the site could be opened both from mobile devices and a computer.
 
 links to site resources:
+https://github.com/student00014301/cwti_citipalace
+https://student00014301.github.io/cwti_citipalace/
